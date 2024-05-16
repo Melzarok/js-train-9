@@ -28,8 +28,8 @@ function findElementGreaterThan(arr, num) {
     : "Числа яке задовільняе умову не знайдено";
 }
 
-// console.log("Завдання: 1  ==============================");
-// console.log(findElementGreaterThan([1, 2, 3, 4, 5], 3)); // Виведе 4
+console.log("Завдання: 1  ==============================");
+console.log(findElementGreaterThan([1, 2, 3, 4, 5], 3)); // Виведе 4
 
 // Завдання: 2
 
@@ -53,16 +53,16 @@ function findIndexByProperty(arr, name) {
   return findIndex !== -1 ? findIndex : -1;
 }
 
-// console.log("Завдання: 2  ==============================");
-// console.log(
-//   findIndexByProperty(
-//     [
-//       { name: "Ivan", age: 23 },
-//       { name: "Petro", age: 30 },
-//     ],
-//     "Petro"
-//   )
-// ); // Виведе 1
+console.log("Завдання: 2  ==============================");
+console.log(
+  findIndexByProperty(
+    [
+      { name: "Ivan", age: 23 },
+      { name: "Petro", age: 30 },
+    ],
+    "Petro"
+  )
+); // Виведе 1
 
 // Завдання: 3 . ЗВЕРНІТЬ УВАГУ, метод findLast працює на версії ноди вище 18.0.0 якщо ваша версія нижче, завдання можно не виконувати
 // щоб перевірити версію ноди виконайте в терміналі команду node -v
@@ -86,8 +86,8 @@ function findLastEvenNumber(arr) {
   return findLastIndex === 0 ? "Парних чисел не знайдено" : findLastIndex;
 }
 
-// console.log("Завдання: 3 ==============================");
-// console.log(findLastEvenNumber([1, 2, 3, 4, 5])); // Виведе 4
+console.log("Завдання: 3 ==============================");
+console.log(findLastEvenNumber([1, 2, 3, 4, 5])); // Виведе 4
 
 // Завдання: 4
 
@@ -112,13 +112,13 @@ function getSubArrayAndConvertToString(arr, startIdx) {
   return sliceIndex.join(" ");
 }
 
-// console.log("Завдання: 4 ==============================");
-// console.log(
-//   getSubArrayAndConvertToString(
-//     ["Я", "люблю", "JavaScript!", "Він", "дуже", "потужний"],
-//     3
-//   )
-// );
+console.log("Завдання: 4 ==============================");
+console.log(
+  getSubArrayAndConvertToString(
+    ["Я", "люблю", "JavaScript!", "Він", "дуже", "потужний"],
+    3
+  )
+);
 // Виведе "Він дуже потужний"
 
 // Завдання: 5
@@ -143,8 +143,8 @@ function getArrayKeys(arr) {
   return Array.from(iter);
 }
 
-// console.log("Завдання: 5  ==============================");
-// console.log(getArrayKeys(["яблуко", "банан", "апельсин"])); // Виведе [0, 1, 2]
+console.log("Завдання: 5  ==============================");
+console.log(getArrayKeys(["яблуко", "банан", "апельсин"])); // Виведе [0, 1, 2]
 
 // Завдання: 6
 
@@ -174,8 +174,8 @@ function getPositiveArrayValues(arr) {
   return PositiveNumFilter;
 }
 
-// console.log("Завдання: 6  ==============================");
-// console.log(getPositiveArrayValues([-2, -1, 0, 1, 2])); // Виведе [1, 2]
+console.log("Завдання: 6  ==============================");
+console.log(getPositiveArrayValues([-2, -1, 0, 1, 2])); // Виведе [1, 2]
 
 // Завдання: 7
 
@@ -204,8 +204,8 @@ function removeAndDouble(arr, startIdx) {
   return doubledElements;
 }
 
-// console.log("Завдання: 7 ==============================");
-// console.log(removeAndDouble([1, 2, 3, 4, 5], 2)); // Виведе [ 2, 4 ]
+console.log("Завдання: 7 ==============================");
+console.log(removeAndDouble([1, 2, 3, 4, 5], 2)); // Виведе [ 2, 4 ]
 
 // Завдання: 8
 
@@ -237,8 +237,8 @@ function sumAndPrint(arr) {
   );
 }
 
-// console.log("Завдання: 8  ==============================");
-// console.log(sumAndPrint([1, 2, 3, 4, 5])); // Виведе
+console.log("Завдання: 8  ==============================");
+console.log(sumAndPrint([1, 2, 3, 4, 5])); // Виведе
 // 1
 // 2
 // 3
@@ -272,17 +272,17 @@ function flattenSquareAndFilter(arr, threshold) {
   return filteredArray;
 }
 
-// console.log("Завдання: 9 ==============================");
-// console.log(
-//   flattenSquareAndFilter(
-//     [
-//       [1, 2],
-//       [3, 4],
-//       [5, 6],
-//     ],
-//     10
-//   )
-// ); // Виведе [16, 25, 36]
+console.log("Завдання: 9 ==============================");
+console.log(
+  flattenSquareAndFilter(
+    [
+      [1, 2],
+      [3, 4],
+      [5, 6],
+    ],
+    10
+  )
+); // Виведе [16, 25, 36]
 
 // Завдання: 10
 
@@ -312,8 +312,8 @@ function getLastElementsSumAndPrint(arr, n) {
   return reduceElem;
 }
 
-// console.log("Завдання: 10  ==============================");
-// console.log(getLastElementsSumAndPrint([1, 2, 3, 4, 5], 2)); // Виведе
+console.log("Завдання: 10  ==============================");
+console.log(getLastElementsSumAndPrint([1, 2, 3, 4, 5], 2)); // Виведе
 // // 4
 // 5
 // 9
@@ -341,8 +341,8 @@ function wordLengths(arr) {
   return mapArray;
 }
 
-// console.log("Завдання: 11 ==============================");
-// console.log(wordLengths(["apple", "banana", "pineapple", "watermelon"])); // Виведе [5, 6, 9, 10]
+console.log("Завдання: 11 ==============================");
+console.log(wordLengths(["apple", "banana", "pineapple", "watermelon"])); // Виведе [5, 6, 9, 10]
 
 // Завдання: 12
 
@@ -367,8 +367,8 @@ function insertElementAt(arr, index, element) {
   return arr;
 }
 
-// console.log("Завдання: 12 ==============================");
-// console.log(insertElementAt([1, 2, 3, 4, 5], 2, "три")); // Виведе [1, 2, 'три', 3, 4, 5]
+console.log("Завдання: 12 ==============================");
+console.log(insertElementAt([1, 2, 3, 4, 5], 2, "три")); // Виведе [1, 2, 'три', 3, 4, 5]
 
 // Завдання: 13
 
@@ -389,8 +389,8 @@ function flattenArray(arr) {
   return arr.flat(Infinity);
 }
 
-// console.log("Завдання: 13 ==============================");
-// console.log(flattenArray([1, [2, [3, [4, [5]]]]])); // Виведе [1, 2, 3, 4, 5]
+console.log("Завдання: 13 ==============================");
+console.log(flattenArray([1, [2, [3, [4, [5]]]]])); // Виведе [1, 2, 3, 4, 5]
 
 // Завдання: 14
 
@@ -414,8 +414,8 @@ function expandArrayByN(arr, n) {
   return expandArray;
 }
 
-// console.log("Завдання: 14 ==============================");
-// console.log(expandArrayByN([1, 2, 3], 3)); // Виведе [1, 1, 1, 2, 2, 2, 3, 3, 3]
+console.log("Завдання: 14 ==============================");
+console.log(expandArrayByN([1, 2, 3], 3)); // Виведе [1, 1, 1, 2, 2, 2, 3, 3, 3]
 
 // Завдання: 15
 
@@ -443,8 +443,8 @@ function findLongestWord(arr) {
 
   return longestWord;
 }
-// console.log("Завдання: 15 ==============================");
-// console.log(findLongestWord(["apple", "banana", "pineapple", "watermelon"])); // Виведе 'watermelon'
+console.log("Завдання: 15 ==============================");
+console.log(findLongestWord(["apple", "banana", "pineapple", "watermelon"])); // Виведе 'watermelon'
 
 // Завдання: 16
 
@@ -468,8 +468,8 @@ function findDuplicateElements(arr) {
 
   return filterDouble;
 }
-// console.log("Завдання: 16 ==============================");
-// console.log(findDuplicateElements([1, 2, 3, 4, 2, 5, 6, 3, 5])); // Виведе [2, 3, 5]
+console.log("Завдання: 16 ==============================");
+console.log(findDuplicateElements([1, 2, 3, 4, 2, 5, 6, 3, 5])); // Виведе [2, 3, 5]
 
 // Завдання: 17
 
@@ -501,8 +501,8 @@ function capitalizeWords(arr) {
 
   return bigFirstLetter;
 }
-// console.log("Завдання: 17 ==============================");
-// console.log(capitalizeWords(["apple", "banana", "orange"])); // Виведе ['Apple', 'Banana', 'Orange']
+console.log("Завдання: 17 ==============================");
+console.log(capitalizeWords(["apple", "banana", "orange"])); // Виведе ['Apple', 'Banana', 'Orange']
 
 // Завдання: 18
 
@@ -530,14 +530,14 @@ function calculateTotalPrice(arr) {
 
   return totalPrice;
 }
-// console.log("Завдання: 18 ==============================");
-// console.log(
-//   calculateTotalPrice([
-//     { name: "apple", price: 1 },
-//     { name: "banana", price: 2 },
-//     { name: "orange", price: 3 },
-//   ])
-// ); // Виведе 6
+console.log("Завдання: 18 ==============================");
+console.log(
+  calculateTotalPrice([
+    { name: "apple", price: 1 },
+    { name: "banana", price: 2 },
+    { name: "orange", price: 3 },
+  ])
+); // Виведе 6
 
 // Завдання: 19. ЗВЕРНІТЬ УВАГУ, метод findLastIndex працює на версії ноди вище 18.0.0 якщо ваша версія нижче, завдання можно не виконувати
 // щоб перевірити версію ноди виконайте в терміналі команду node -v
